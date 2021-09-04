@@ -3,7 +3,7 @@ import { NestFactory } from '@nestjs/core'
 import { ExpressAdapter } from '@nestjs/platform-express'
 import { AppModule } from './app.module'
 import { RequestListener } from 'http'
-const express = require('express')
+import * as express from 'express'
 require('source-map-support/register')
 const serverlessExpress = require('@vendia/serverless-express')
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger'
